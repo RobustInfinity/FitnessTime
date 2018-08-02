@@ -1,0 +1,983 @@
+
+.wrapper{
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+}
+header{
+    background-color: black;
+    z-index: 1000;
+    position: fixed!important;
+    right: 0;
+}
+
+header nav{
+    background-color: black!important;
+    padding-top: 17px!important;
+    padding-bottom: 17px!important;
+}
+
+nav  .navbar-brand {
+    color: white!important;
+}
+
+nav a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+nav a:hover{
+    color: white;
+    background-color: #E25050;
+}
+
+nav .nav-item{
+    margin-right: 8px;
+}
+
+@media only screen and (max-width:1200px){
+    .navbar-toggler{
+        border-color: white;
+        border: 1.5px solid white;
+        padding: 5px;
+    }
+    .navbar-toggler-icon{
+        height: 4px;
+        margin-bottom: 4px;
+        margin-top: 3px;
+        background-color: white;
+        display: block;
+        border-radius: 1em;
+    }
+}
+
+.active{
+    color: white;
+    background-color: #E25050!important;
+}
+
+.sec-one{
+    margin-top: 70px;
+    margin-bottom: 10px;
+    /* z-index: 0; */
+    min-height: 300px;
+    position: fixed;
+    right: 0;
+}
+
+/* Slideshow container */
+.sec-one .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .sec-one .mySlides {
+      /* display: none; */
+  }
+  
+  .sec-one .controls{
+      position: relative;
+  }
+  /* Next & previous buttons */
+  .sec-one .prev, .sec-one .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -20%;
+    padding: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 100em;
+    background-color: rgba(0,0,0,0.6);
+  }
+  
+  /* Position the "next button" to the right */
+  .sec-one .next {
+      /* position: relative; */
+    right: 0;
+    border-radius: 100em;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  /* Caption text */
+  .sec-one .text {
+    color: #f2f2f2;
+    font-size: 24px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 100px;
+    left: 25%;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .sec-one .one{
+      background-color: rgba(226, 80, 80,0.8);
+      top: 65px;
+      font-size: 13px;
+  }
+  .sec-one .three{
+    background-color: rgba(0,0,0,0.6);
+    top: 152px;
+    font-size: 16px;
+}
+  
+  /* Number text (1/3 etc) */
+  .sec-one .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .sec-one .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @media only screen and (max-width:1200px){
+    .sec-one{
+        min-height: 200px;
+        margin-top: 70px;
+    }
+    .sec-one .prev, .sec-one .next {
+        padding: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        color: lightgrey;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .sec-one .one{
+        background-color: rgba(226, 80, 80,0.8);
+        top: 65px;
+        font-size: 10px;
+        left: 20%;
+    }
+    .sec-one .two{
+        top: 95px;
+        background-color: rgba(0,0,0,0.6);
+        font-size: 25px;
+        left: 20%!important;
+    }
+    .sec-one .three{
+      background-color: rgba(0,0,0,0.6);
+      top: 147px;
+      font-size: 16px;
+      left: 20%;
+  }
+  }
+  @media only screen and (max-width:991px){
+    .slideshow{
+        height: 200px;
+    }
+    .mySlides{
+        height: 100%;
+    }
+    .mySlides img{
+        height: 100%;
+    }
+    .sec-one .one{
+        background-color: rgba(226, 80, 80,0.8);
+        top: 65px;
+        font-size: 10px;
+        left: 28%;
+    }
+    .sec-one .two{
+        top: 95px;
+        background-color: rgba(0,0,0,0.6);
+        font-size: 20px;
+        left: 28%!important;
+    }
+    .sec-one .three{
+      background-color: rgba(0,0,0,0.6);
+      top: 140px;
+      font-size: 14px;
+      left: 28%;
+  }
+  }
+  @media only screen and (max-width:768px){
+    .slideshow{
+        height: 250px;
+    }
+    .mySlides{
+        height: 100%;
+    }
+    .mySlides img{
+        height: 100%;
+        width: 120%!important;
+        margin-left:-20%; 
+    }
+    .sec-one .one{
+        top: 75px;
+        font-size: 10px;
+        left: 25%;
+        padding: 4px 8px!important;
+    }
+    .sec-one .two{
+        top: 95px;
+        font-size: 14px;
+        left: 25%!important;
+        padding: 4px 8px;
+    }
+    .sec-one .three{
+      top: 123px;
+      font-size: 12px;
+      left: 25%;
+      padding: 4px 8px;
+  }
+    .sec-one .prev, .sec-one .next {
+        padding: 6px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        color: lightgrey;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: -150px;
+    }
+  }
+  @media only screen and (max-width:576px){
+    .slideshow{
+        height: 200px;   
+    }
+    .mySlides{
+        height: 100%;
+    }
+    .mySlides img{
+        height: 100%;
+        width: 120%!important;
+        margin-left: -20%;
+    }
+    .sec-one .prev, .sec-one .next {
+        padding: 6px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        color: lightgrey;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: -100px;
+    }
+    .sec-one .one{
+        top: 135px;
+        font-size: 8px;
+        left: 20%;
+        padding: 2px 6px!important;
+    }
+    .sec-one .two{
+        top: 150px;
+        font-size: 12px;
+        left: 20%!important;
+        padding: 2px 6px;
+    }
+    .sec-one .three{
+      top: 171px;
+      font-size: 10px;
+      left: 20%;
+      padding: 2px 6px;
+  }
+  }
+  .sec-two{
+    margin-top: 30%;
+    background-color: white;
+  }
+
+  .sec-two h3{
+    font-size: 30px;
+    line-height: 30px;
+    color: rgb(32,32,32);
+    font-family: "Oswald";
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+}
+.sec-two h3 span{
+    color: #E25050;
+}
+
+.sec-two h5{
+    font-size: 16px;
+    line-height: 30px;
+    color: #999;
+    font-family: "DROID Serif";
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.sec-two .first , .sec-two .second, .sec-two .third, .sec-two .four{
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.sec-two .first h4, .sec-two .second h4, .sec-two .third h4, .sec-two .four h4{
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(32,32,32);
+    font-family: "Oswald";
+    font-weight: bold;
+}
+.sec-two .first span i, .sec-two .second span i, .sec-two .third span i, .sec-two .four span i{
+    color: #e14f4f;
+    margin-right: 10px;
+}
+.sec-two .first p, .sec-two .second p, .sec-two .third p, .sec-two .four p{
+    font-size: 13px;
+    line-height: 21px;
+    color: rgb(119,119,119);
+    font-family: "Open Sans";
+    padding-top: 10px;
+}
+
+@media only screen and (max-width:1200px){
+    
+}
+
+@media only screen and (max-width:991px){
+    .sec-two{
+        margin-top: 300px;
+    }
+    .sec-two .first h4, .sec-two .second h4, .sec-two .third h4, .sec-two .four h4{
+         font-size: 17px;
+    }
+    .sec-two .first span i, .sec-two .second span i, .sec-two .third span i, .sec-two .four span i{
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .sec-two{
+        margin-top: 300px;
+    }
+    .sec-two h5{
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+    .sec-two .first , .sec-two .second , .sec-two .third , .sec-two .four{
+        margin-bottom: 20px;
+        padding-bottom: 0px;
+    }
+    .sec-two .first h4, .sec-two .second h4, .sec-two .third h4, .sec-two .four h4{
+        margin-bottom: 5px;
+    }
+    .sec-two .first span i, .sec-two .second span i, .sec-two .third span i, .sec-two .four span i{
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .sec-two{
+        margin-top: 300px;
+    }
+    .sec-two h3{
+        font-size: 24px;
+    }
+}
+.sec-three{
+    background-color: #1F1F1F;
+    position: relative;
+    padding-bottom: 70px;
+}
+.sec-three h3{
+    font-size: 26px;
+    line-height: 21px;
+    color: rgb(255,255,255);
+    font-family: "Oswald";
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+.sec-three h3::after{
+    content: "";
+    top: 0;
+    width: 8%;
+    height: 2px;
+    background-color: rgb(255,255,255);
+    display: block;
+    margin-left: 46%;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+.sec-three .first, .sec-three .second, .sec-three .third, .sec-three .four{
+    z-index: 1;
+    min-height: 320px;
+}
+
+
+.sec-three .flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+  
+      /* border: 1px solid #ccc; */
+  }
+  
+    .sec-three  .flip-container:hover .flipper,  
+   .sec-three .flip-container.hover .flipper {
+          -webkit-transform: rotateY(180deg);
+          -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+      }
+  
+  .sec-three .flip-container,.sec-three .front,.sec-three .back {
+      /* width: 320px; */
+      height: auto;
+  }
+  
+  .sec-three .flipper {
+      -webkit-transition: 0.6s;
+      -webkit-transform-style: preserve-3d;
+  
+      -moz-transition: 0.6s;
+      -moz-transform-style: preserve-3d;
+    
+    -o-transition: 0.6s;
+      -o-transform-style: preserve-3d;
+  
+      transition: 0.6s;
+      transform-style: preserve-3d;
+  
+      position: relative;
+  }
+  
+  .sec-three .front, .sec-three .back {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+      backface-visibility: hidden;
+  
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  
+  .sec-three .front {
+      z-index: 2;
+  }
+  
+  .sec-three .back {
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+  
+      background: white;
+  }
+  
+ 
+.sec-three .first .image, .sec-three .second .image, .sec-three .third .image, .sec-three .four .image{
+    height: 250px;
+    background-color: #999;
+    display: block;
+    padding: 0px;
+}
+.sec-three .first .title, .sec-three .second .title, .sec-three .third .title, .sec-three .four .title{
+    height: 70px;
+    background-color: white;
+    display: block;
+}
+
+.sec-three img{
+    height: 100%;
+    width: 100%;
+}
+
+.sec-three .title h4{
+    font-size: 15px;
+    line-height: 24px;
+    color: rgb(32,32,32);
+    font-family: "Oswald";
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.sec-three .title h5{
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(175,175,175);
+    font-family: "Oswald";
+    padding-left: 10px;
+}
+
+@media only screen and (max-width:1200px){
+    .sec-three .back h4{
+        font-size: 22px!important;
+        margin-bottom: 8px;
+    }
+    .sec-three .back h5{
+        font-size: 18px!important;
+        margin-bottom: 0px!important;
+    }
+    .sec-three .back p{
+        padding-top: 10px!important;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:991px){
+    .sec-three .first , .sec-three .second , .sec-three .third , .sec-three .four{
+        padding: 5px;
+    }
+    .sec-three .first .image, .sec-three .second .image, .sec-three .third .image, .sec-three .four .image{
+        height: 200px;
+    }
+    .sec-three .title{
+        padding-left: 5px!important;
+        padding-right: 5px!important;
+    }
+    .sec-three .back{
+        height: 270px!important;
+    }
+    .sec-three .back h4{
+        font-size: 18px!important;
+        margin-bottom: 0px;
+        padding: 2px;
+        padding-bottom: 0px;
+    }
+    .sec-three .back h5{
+        font-size: 14px!important;
+        padding: 2px;
+        padding-bottom: 0px;
+    }
+    .sec-three .back .title p{
+        font-size: 13px!important;
+        padding: 2px!important;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .sec-three .back{
+        height: 270px!important;
+    }
+    .sec-three .back .title p{
+        font-size: 13px!important;
+        padding-top: 12px!important;
+    }
+}
+
+@media only screen and (max-width:576px){
+    
+}
+
+.sec-four{
+    background-color: white;
+}
+
+.sec-four .first h3{
+    font-size: 26px;
+    line-height: 21px;
+    color: rgb(32,32,32);
+    font-family: "Oswald";
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+.sec-four .first h3::after{
+    content: "";
+    top: 0;
+    width: 8%;
+    height: 2px;
+    background-color: rgb(32,32,32);
+    display: block;
+    margin-left: 46%;
+    margin-top: 15px;
+}
+.sec-four .second h5{
+    font-size: 12px;
+    line-height: 21px;
+    color: rgb(119,119,119);
+    font-family: "Open Sans";
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.sec-four .third{
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+.sec-four .third .thumb{
+    height: 200px;
+    background-color: #999;
+    margin: 10px;
+    padding: 0px;
+}
+
+.sec-four .third .thumb img{
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width:1200px){
+    
+}
+
+@media only screen and (max-width:991px){
+    
+}
+
+@media only screen and (max-width:768px){
+    
+}
+
+@media only screen and (max-width:576px){
+    
+}
+
+.sec-five{
+    background-color: #E25050;
+}
+
+.sec-five h3{
+    color: white;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.sec-five h3::after{
+    content: "";
+    top: 0;
+    width: 10%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin-left: 45%;
+    margin-top: 10px;
+}
+
+
+.sec-five .first, .sec-five .second, .sec-five .third{
+    background-color: #D14343;
+    padding: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 15px
+}
+
+
+.sec-five .first .left, .sec-five .second .left, .sec-five .third .left{
+    font-weight: bold;
+    border-right: 1px solid white;
+}
+
+.sec-five .first .left .logo, .sec-five .second .left .logo, .sec-five .third .left .logo{
+    text-align: center;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 100!important;
+}
+.sec-five .first .left h4, .sec-five .second .left h4, .sec-five .third .left h4{
+    font-size: 18px;
+    line-height: 21px;
+    color: rgb(255,255,255);
+    font-family: "Oswald";
+    font-weight: bold;
+    text-align: center;
+}
+
+.sec-five .first .left h2, .sec-five .second .left h2, .sec-five .third .left h2{
+    font-size: 36px;
+    line-height: 21px;
+    color: rgb(255,255,255);
+    font-family: "Oswald";
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+}
+.sec-five .first .left .logo p, .sec-five .second .left .logo p, .sec-five .third .left .logo p{
+    margin-bottom: 0px;
+    font-size: 35px;
+}
+.sec-five .first .right, .sec-five .second .right, .sec-five .third .right{
+    font-size: 13px;
+    padding-top: 15px;
+}
+
+.sec-five .first .right i, .sec-five .second .right i, .sec-five .third .right i{
+    margin-left: 5px;
+    margin-right:8px;
+}
+
+@media only screen and (max-width:1200px){
+    
+}
+
+@media only screen and (max-width:991px){
+    .sec-five .first, .sec-five .second, .sec-five .third{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .sec-five .first .right p, .sec-five .second .right p, .sec-five .third .right p{
+        margin-bottom: 5px;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    
+}
+
+@media only screen and (max-width:576px){
+    
+}
+
+.sec-six{
+    background-color: white;
+    padding-bottom: 30px;
+}
+.sec-six h3{
+    color: black;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.sec-six h3::after{
+    content: "";
+    top: 0;
+    width: 10%;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin-left: 45%;
+    margin-top: 10px;
+}
+
+
+.sec-six .flt-left{
+    float:left;
+  }
+ .sec-six .carousel{
+    width:100%;
+    margin:auto;
+   }
+ .sec-six .row_partner{
+    width:90%;
+    padding:0;
+    overflow:hidden;
+    margin:auto;
+  }
+ .sec-six .row-container{
+    width:2000px;
+    transition:0.5s;
+  }
+ .sec-six .container_partner{
+    width:250px;
+    float:left;
+    display:inline;
+    margin:0 5px;
+  }
+ .sec-six .clear{
+    clear:both;
+  }
+ .sec-six .controls{
+    width:100%;
+    margin:auto;
+  }
+ .sec-six button{
+    border:none;
+    padding:10px 20px;
+    width: 11px;
+    height: 19px;
+    border-radius: 10px;
+    background-color: white;
+    color: #bbb;
+    font-size: 28px;
+    font-weight:bold;
+    outline:none;
+    position:relative;
+    margin-top: 50px;
+  }
+  
+  @media only screen and (max-width:1200px){
+    
+}
+
+@media only screen and (max-width:991px){
+    
+}
+
+@media only screen and (max-width:768px){
+    
+}
+
+@media only screen and (max-width:576px){
+    
+} 
+
+footer{
+    background-color: #202020;
+    color: white;
+}
+
+footer .upper{
+    padding-top: 18px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+footer .upper .first{
+    font-size: 30px;
+    vertical-align: middle;
+    /* padding-right: 0px; */
+}
+
+footer .upper .first p{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+footer .upper .second{
+    /* padding-left: 0px; */
+}
+
+footer .upper .second p{
+    font-size: 14px;
+    color: #525252;
+}
+
+footer .upper .third .support{
+    padding-right: 0px;
+}
+
+footer .mid{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+footer .mid .left p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #525252;
+}
+
+footer .mid .left .support{
+    padding-left: 0px;
+}
+
+footer .mid .left .support p{
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+footer .mid .left .support i{
+    margin-right: 8px;
+    color: white;
+}
+
+footer .mid .right .form-control{
+    background-color: #202020;
+    color: white!important;
+    border-radius: 0px;
+    border-color: #454545;
+}
+
+footer .mid .right .form-control::placeholder{
+    color: #525252;
+}
+
+footer .mid .right .btn{
+    width: 100%;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+footer .mid .right .btn-primary{
+    background-color: #E25050;
+    border-color: #E25050;
+}
+footer .mid .right small{
+    color: #525252;
+}
+ .lower{
+    background-color: #202020;
+    margin: 0px!important;
+}
+ .lower p{
+    font-size: 13px;
+    color: #454545;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
+@media only screen and (max-width:1200px){
+    
+}
+
+@media only screen and (max-width:991px){
+    
+}
+
+@media only screen and (max-width:768px){
+    footer .mid .left{
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    
+}
